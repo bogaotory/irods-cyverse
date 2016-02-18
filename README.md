@@ -6,7 +6,7 @@ This is an example project to demonstrate how to dockerise a CyVerse-compatible 
 3. An iCommands-Enabled Client
 
 ## Requirement
-The `docker-compose.yml` file is written using version 2 syntax, so in order to build the docker images used in this project, you will need Docker Engine version 1.10.0+ and Docker Compose version 1.6.0+
+The `docker-compose.yml` file is written using [version 2 syntax](https://docs.docker.com/compose/compose-file/#version-2), so in order to build the docker images used in this project, you will need Docker Engine version 1.10.0+ and Docker Compose version 1.6.0+
 
 ## Usage
 Begin by fill in all the environment parameters in `env.properties`. This repository provides an example `env.properties` file that would get everything up and running correctly, but feel free to modify the settings to suit your requirement.
