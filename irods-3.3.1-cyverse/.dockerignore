@@ -1,0 +1,4 @@
+*
+!config/
+!iRODS/
+!bootstrap.sh

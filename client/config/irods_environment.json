@@ -1,0 +1,6 @@
+{
+	"irods_host": "ies",
+	"irods_user_name": "irods",
+	"irods_port": 1247,
+	"irods_zone_name": "cyverseZone"
+}

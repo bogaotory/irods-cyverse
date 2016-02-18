@@ -1,0 +1,7 @@
+/*
+!.gitignore
+!/config
+!/iRODS
+!Dockerfile
+!bootstrap.sh
+!.dockerignore

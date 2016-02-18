@@ -1,0 +1,2 @@
+// setavu module microservices
+{ "msiSetAVU", 5, (funcPtr) msiSetAVU },

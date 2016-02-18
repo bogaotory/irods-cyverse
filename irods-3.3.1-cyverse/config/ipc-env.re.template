@@ -1,0 +1,12 @@
+# VERSION: 3
+#
+# The localhost environment rule customizations belong in this file.
+
+ipc_AMQP_HOST = \'${AMQP_HOSTNAME}\'
+ipc_AMQP_PORT = ${RABBITMQ_PORT}
+ipc_AMQP_USER = \'${RABBITMQ_DEFAULT_USER}\'
+ipc_AMQP_PASSWORD = \'${RABBITMQ_DEFAULT_PASS}\'
+ipc_AMQP_EPHEMERAL = ${RABBITMQ_EPHEMERAL}
+
+ipc_RODSADMIN = \'${iRODS_ADMIN_USER}\'
+ipc_RE_HOST = \'${IES_HOSTNAME}\'

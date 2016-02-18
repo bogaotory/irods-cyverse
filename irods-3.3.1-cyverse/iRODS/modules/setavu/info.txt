@@ -1,0 +1,9 @@
+Name:		setavu
+Brief:		Microservice for setting an AVU on an iRODS item.
+Description:	A microservice for setting an AVU on a collection, data object, resource,
+resource group, or user.
+Dependencies:
+Enabled:	yes
+Creator:	Tony Edgin, University of Arizona
+Created:	April 2014
+License:	BSD

@@ -1,0 +1,9 @@
+[PostgreSQL]
+Driver=${POSTGRES_DRIVER}
+Debug=0
+CommLog=0
+Servername=${IES_HOSTNAME}
+Database=${POSTGRES_DB_NAME}
+ReadOnly=no
+Ksqo=0
+Port=${POSTGRES_DB_PORT}

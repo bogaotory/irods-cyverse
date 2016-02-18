@@ -1,0 +1,13 @@
+/*
+!.gitignore
+!/client
+!/irods-3.3.1-cyverse
+!README.md
+!env.properties
+!docker-compose.yml
+!configure.sh
+!build.sh
+!up.sh
+!stop.sh
+!rm.sh
+!compose.sh

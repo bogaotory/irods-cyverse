@@ -1,0 +1,6 @@
+{
+$'\t'\"irods_host\": \"${IES_HOSTNAME}\",
+$'\t'\"irods_user_name\": \"${iRODS_ADMIN_USER}\",
+$'\t'\"irods_port\": ${iRODS_PORT},
+$'\t'\"irods_zone_name\": \"${iRODS_ZONE}\"
+}

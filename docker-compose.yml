@@ -1,0 +1,50 @@
+version: "2"
+
+services:
+    amqp:
+        image: rabbitmq:3.6-management
+        hostname: "$AMQP_HOSTNAME"
+        env_file: env.properties
+        # ports:
+        #     - "5672"
+        #     - "15672:15672"
+
+    ies:
+        build:
+            context: ./irods-3.3.1-cyverse
+            args:
+                - IES_CONTAINER_USERNAME
+                - IES_CONTAINER_USERPASS
+                - iRODS_RESOURCE_PATH
+                - iRODS_SRC_PATH
+                - iRODS_PORT
+                - IES_HOSTNAME
+                - POSTGRES_HOME
+                - POSTGRES_DB_PORT
+        hostname: "$IES_HOSTNAME"
+        depends_on:
+            - "$AMQP_HOSTNAME"
+        user: $IES_CONTAINER_USERNAME
+        env_file: env.properties
+        volumes:
+            - ies-vault:$iRODS_RESOURCE_PATH
+            - ies-pgsql-data:$POSTGRES_DATA
+        # expose:
+        #     - "1247"
+        #     - "5432"
+
+    client:
+        build:
+            context: ./client
+        hostname: "$CLIENT_HOSTNAME"
+        depends_on:
+            - "$IES_HOSTNAME"
+        user: foo
+        env_file: env.properties
+        # command: [sleep, infinity]
+
+volumes:
+    ies-vault:
+        driver: local
+    ies-pgsql-data:
+        driver: local
