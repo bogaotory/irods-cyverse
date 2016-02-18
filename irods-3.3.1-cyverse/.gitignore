@@ -5,3 +5,4 @@
 !Dockerfile
 !bootstrap.sh
 !.dockerignore
+!README.md
