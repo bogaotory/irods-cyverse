@@ -25,5 +25,5 @@ function fillConfig() {
 	done
 }
 
-fillConfig ./irods-legacy-3.3.1/config
-# fillConfig ./client/config
+fillConfig ./irods-3.3.1-cyverse/config
+fillConfig ./client/config
