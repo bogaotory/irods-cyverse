@@ -23,7 +23,7 @@ services:
                 - POSTGRES_DB_PORT
         hostname: "$IES_HOSTNAME"
         depends_on:
-            - "$AMQP_HOSTNAME"
+            - amqp
         user: $IES_CONTAINER_USERNAME
         env_file: env.properties
         volumes:
@@ -38,7 +38,7 @@ services:
             context: ./client
         hostname: "$CLIENT_HOSTNAME"
         depends_on:
-            - "$IES_HOSTNAME"
+            - ies
         user: foo
         env_file: env.properties
         # command: [sleep, infinity]
